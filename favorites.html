@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites</title>
+  <style>
+  
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100%;
+      max-width: 100vw;
+      padding: 30px 20px;
+      text-align: center;
+      font-family: sans-serif;
+      background-color: #fff;
+    }
+
+    h1 {
+      color: #ff8fa3;
+      font-size: 36px;
+      margin-bottom: 25px;
+      font-weight: normal;
+    }
+
+    /* Container para sa mga buttons */
+    .category-container {
+      display: flex;
+      flex-direction: column; /* Nakapatong pababa */
+      gap: 15px; /* Agwat sa pagitan ng buttons */
+      max-width: 300px;
+      margin: 0 auto 30px auto; /* Nakagitna */
+    }
+
+    /* Style ng bawat Category Button */
+    .cat-btn {
+      display: block;
+      padding: 15px 20px;
+      background-color: #fff0f3;
+      color: #ff4d6d;
+      text-decoration: none;
+      border: 2px solid #ffb3c1;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    /* Effect kapag pinindot o tinutok */
+    .cat-btn:hover {
+      background-color: #ff4d6d;
+      color: white;
+    }
+
+    /* Home Button Style */
+    .home-btn {
+      display: inline-block;
+      padding: 10px 22px;
+      background-color: #ff4d6d;
+      color: #fff0f3;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+   </style>
+</head>
+<body>
+
+  
+  <h1 style="color: lightpink; font-family: 'Brush Script MT', cursive;">
+    FAVS ! </h1>
+
+  <!-- Mga Category Buttons -->
+  <div class="category-container">
+    <a href="foods.html" class="cat-btn"> Foods</a>
+    <a href="drinks.html" class="cat-btn"> Drinks </a>
+    <a href="songs.html" class="cat-btn"> Songs</a>
+    <a href="places.html" class="cat-btn"> Places</a>
+        
+  </div>
+
+  <!-- Button pabalik sa Home Page -->
+  <a href="index.html" class="home-btn">← Home</a>
+  
+   
+</body>
+</html>
